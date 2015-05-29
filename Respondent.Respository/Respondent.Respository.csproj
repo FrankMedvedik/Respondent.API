@@ -48,50 +48,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="person.cs">
-      <DependentUpon>RespondentModel.tt</DependentUpon>
+    <Compile Include="Person.cs">
+      <DependentUpon>Respondent.tt</DependentUpon>
     </Compile>
-    <Compile Include="phone.cs">
-      <DependentUpon>RespondentModel.tt</DependentUpon>
+    <Compile Include="Phone.cs">
+      <DependentUpon>Respondent.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RespondentModel.Context.cs">
+    <Compile Include="Respondent.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RespondentModel.Context.tt</DependentUpon>
+      <DependentUpon>Respondent.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="RespondentModel.cs">
+    <Compile Include="Respondent.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RespondentModel.tt</DependentUpon>
+      <DependentUpon>Respondent.tt</DependentUpon>
     </Compile>
-    <Compile Include="RespondentModel.Designer.cs">
+    <Compile Include="Respondent.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RespondentModel.edmx</DependentUpon>
+      <DependentUpon>Respondent.edmx</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="RespondentModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>RespondentModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
-    <None Include="RespondentModel.Context.tt">
+    <EntityDeploy Include="Respondent.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Respondent.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Respondent.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RespondentModel.edmx</DependentUpon>
-      <LastGenOutput>RespondentModel.Context.cs</LastGenOutput>
+      <DependentUpon>Respondent.edmx</DependentUpon>
+      <LastGenOutput>Respondent.Context.cs</LastGenOutput>
     </None>
-    <None Include="RespondentModel.edmx.diagram">
-      <DependentUpon>RespondentModel.edmx</DependentUpon>
+    <None Include="Respondent.edmx.diagram">
+      <DependentUpon>Respondent.edmx</DependentUpon>
     </None>
-    <None Include="RespondentModel.tt">
+    <None Include="Respondent.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RespondentModel.edmx</DependentUpon>
-      <LastGenOutput>RespondentModel.cs</LastGenOutput>
+      <DependentUpon>Respondent.edmx</DependentUpon>
+      <LastGenOutput>Respondent.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

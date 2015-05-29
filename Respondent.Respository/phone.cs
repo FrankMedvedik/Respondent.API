@@ -12,19 +12,18 @@ namespace Respondent.Respository
     using System;
     using System.Collections.Generic;
     
-    public partial class phone
+    public partial class Phone
     {
-        public System.Guid phone_id { get; set; }
-        public System.Guid person_id { get; set; }
-        public string phone_type_code { get; set; }
-        public int phone_order { get; set; }
-        public string phone_number { get; set; }
-        public Nullable<bool> is_default { get; set; }
-        public Nullable<System.DateTime> updated { get; set; }
-        public string updated_user { get; set; }
-        public string created_user { get; set; }
-        public System.DateTime created { get; set; }
+        public System.Guid PhoneId { get; set; }
+        public string PhoneNumber { get; set; }
+        public Nullable<bool> IsDefault { get; set; }
+        public Nullable<System.DateTime> UpdateDate { get; set; }
+        public string UpdateUser { get; set; }
+        public string CreateUser { get; set; }
+        public System.DateTime CreateDate { get; set; }
+        public System.Guid PersonId { get; set; }
+        public string PhoneTypeCode { get; set; }
     
-        public virtual person person { get; set; }
+        public virtual Person Person { get; set; }
     }
 }

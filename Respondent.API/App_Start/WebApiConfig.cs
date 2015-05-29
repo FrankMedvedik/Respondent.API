@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using System.Web.Http.OData.Builder;
+using System.Web.Http.OData.Extensions;
+
 
 namespace Respondent.API
 {
@@ -12,13 +15,16 @@ namespace Respondent.API
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            var formatters = GlobalConfiguration.Configuration.Formatters;
-            var jsonFormatter = formatters.JsonFormatter;
-            var settings = jsonFormatter.SerializerSettings;
-            settings.Formatting = Formatting.Indented;
-            settings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            
             // Web API routes
+            
             config.MapHttpAttributeRoutes();
+
+            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver =
+                new CamelCasePropertyNamesContractResolver();
+            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling
+                = Newtonsoft.Json.ReferenceLoopHandling.Ignore; 
+            config.EnableCors();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
@@ -28,3 +34,7 @@ namespace Respondent.API
         }
     }
 }
+
+
+
+ 

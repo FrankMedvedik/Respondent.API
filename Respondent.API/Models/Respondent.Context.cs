@@ -13,10 +13,10 @@ namespace Respondent.Respository
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class respondentEntities : DbContext
+    public partial class RespondentWorkEntities : DbContext
     {
-        public respondentEntities()
-            : base("name=respondentEntities")
+        public RespondentWorkEntities()
+            : base("name=RespondentWorkEntities")
         {
         }
     
@@ -25,7 +25,7 @@ namespace Respondent.Respository
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<person> people { get; set; }
-        public virtual DbSet<phone> phones { get; set; }
+        public virtual DbSet<Person> People { get; set; }
+        public virtual DbSet<Phone> Phones { get; set; }
     }
 }

@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Respondent.API", "Responden
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Respondent.API.Tests", "Respondent.API.Tests\Respondent.API.Tests.csproj", "{3F47D9D6-0797-486E-9C85-3C16C9D18065}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Respondent.Respository", "Respondent.Respository\Respondent.Respository.csproj", "{E305F501-DA82-4448-B0A1-FFDF56741FC4}"
-EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Respondent.Web(2)", "http://localhost:60156", "{760B2E86-5237-456B-8F3D-09C1C79FEC73}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
@@ -31,6 +29,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Respondent.Web(2)", "http:/
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Respondent.Respository", "Respondent.Respository\Respondent.Respository.csproj", "{E305F501-DA82-4448-B0A1-FFDF56741FC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,14 +45,14 @@ Global
 		{3F47D9D6-0797-486E-9C85-3C16C9D18065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F47D9D6-0797-486E-9C85-3C16C9D18065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F47D9D6-0797-486E-9C85-3C16C9D18065}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E305F501-DA82-4448-B0A1-FFDF56741FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E305F501-DA82-4448-B0A1-FFDF56741FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E305F501-DA82-4448-B0A1-FFDF56741FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E305F501-DA82-4448-B0A1-FFDF56741FC4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{760B2E86-5237-456B-8F3D-09C1C79FEC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{760B2E86-5237-456B-8F3D-09C1C79FEC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{760B2E86-5237-456B-8F3D-09C1C79FEC73}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{760B2E86-5237-456B-8F3D-09C1C79FEC73}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E305F501-DA82-4448-B0A1-FFDF56741FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E305F501-DA82-4448-B0A1-FFDF56741FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E305F501-DA82-4448-B0A1-FFDF56741FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E305F501-DA82-4448-B0A1-FFDF56741FC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
